@@ -34,7 +34,7 @@ def defProject(name: String, directory: String): Project = {
         case x =>
           val oldStrategy = (assemblyMergeStrategy in assembly).value
           oldStrategy(x)
-      },
+      }
     )
 }
 
